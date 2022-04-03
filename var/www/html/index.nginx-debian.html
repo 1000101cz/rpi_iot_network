@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+<link rel="icon" href="web_icon.png">  <meta http-equiv="refresh" content="60">
+<title>Strahoff</title>
+<style>
+    body {
+        width: 80em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+    h1 {text-align: center;}
+</style>
+</head>
+<body style="background-color:black;">
+
+<font face="Arial" color="#FF7A59"><h1>  <<  Strahoff [0/0]  >>  </h1>
+<center><i>fetor iudaeorum</i></center>
+Čas: <span id="datetime"></span>
+<p><h2>Teplota</h2></p>
+<img src="graph.png">
+<h2>Poslední průchod dveřmi</h2> <p> <!-- time on line 24 !!! -->
+Sun Apr  3 04:25:40 2022
+<h2>Teplota CPU</h2>
+<p> <!-- temperature on line 27 !!! -->
+51.121 °C
+<br><br>
+<a href="X_dela.html"><img src="icons/X_dela.png"></a>
+<br>
+<a href="Y_dela.html"><img src="icons/Y_dela.png"></a>
+<br><br><br>
+<i>Stepan Marousek, 2022</i>
+</font>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+
+</html>
