@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#
+bash /home/pi/IoT/scripts/set_interfaces.sh &
+bash /home/pi/Documents/scripts/net_script.sh &
+runuser -l pi -c '/home/pi/IoT/scripts/dtd &'
+runuser -l pi -c 'python3 /home/pi/IoT/scripts/html_commands/door_update.py &'
+runuser -l pi -c 'python3 /home/pi/IoT/scripts/html_commands/CPUtemperature.py &'
+
+exit 0
